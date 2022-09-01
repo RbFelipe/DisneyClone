@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Avenir Roman';
+    src: url(fonts/avenir-roman.otf) format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(images/original.jpg) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Avenir Roman',sans-serif;
+}
+
+.logo{
+    max-width: 160px;
+}
+
+.hero-content{
+    padding-left: 80px;
+}
+
+.hero-content > p{
+    color: #c0c0c0;
+    font-size: 12px;
+    line-height: 22px; 
+    margin-top: 16px;
+}
+
+h1{
+    color: #f9f9f9;
+    font-size: 44px;
+    line-height: 53px;
+    margin: 20px 0 30px 0;
+}
+
+.precos-container{
+    display: flex;
+}
+
+.preco span{
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #f9f9f9;
+}
+
+.preco{
+    width: 300px;
+    max-width: 100%;
+    color: #c0c0c0;
+}
+
+.preco:first-child  {
+    display: grid;
+}
+
+.preco:first-child  a{
+    align-self: flex-end;
+}
+
+.preco a{
+    padding: 16.5px 24px;
+    background: #0063e5;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f9f9f9;
+    display: block;
+    transition: 0.2 ease;
+}
+
+.preco a:hover{
+    background: #016cf9;
+}
+
+.preco p{
+    margin: 16px 0px;
+}
+
+.preco + .preco{
+    margin-left: 32px;
+}
